@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="flex justify-center">
+        <img class="w-40" src="assets/img/logo-large.png">
+      </ion-col>
+      <ion-col>
+        <ion-segment [value]="currentSegmentValue()" (ionChange)="onSegmentValueChange($event)">
+          <ion-segment-button routerLink="login" value="login">
+            <ion-label class="capitalize font-bold">Entrar</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="signup">
+            <ion-label class="capitalize font-bold">Registrar-se</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <main class="px-3 mt-3">
+    <router-outlet/>
+  </main>
+</ion-content>
