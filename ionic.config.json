@@ -1,0 +1,7 @@
+{
+  "name": "GLFood",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
