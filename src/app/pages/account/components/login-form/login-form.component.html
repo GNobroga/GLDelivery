@@ -1,14 +1,15 @@
 <div id="login" class="flex flex-col gap-4">
-  <ion-item [counter]="true" class="h-20">
+  <ion-item [counter]="true">
     <ion-label position="floating">Email</ion-label>
-    <ion-input/>
+    <ion-input type="text"/>
   </ion-item>
   <ion-item [counter]="true">
-    <ion-label position="floating" class="text-base">Senha</ion-label>
+    <ion-label position="floating">Senha</ion-label>
     <ion-input type="password"/>
   </ion-item>
   <span class="text-palette-primary cursor: pointer; hover:underline">Esqueceu a senha?</span>
-  <ion-button class="absolute bottom-20 left-1/2 -translate-x-1/2 w-80 text-white" size="large" shape="round">
+  <ion-button routerLink="/tabs/home" class="w-80 mt-5 text-white mx-auto" size="large" shape="round">
     Login
   </ion-button>
+
 </div>

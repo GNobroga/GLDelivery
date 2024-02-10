@@ -1,8 +1,10 @@
 <ion-content>
-  <ion-grid>
+  <ion-grid class="pt-5">
     <ion-row>
-      <ion-col size="12" class="flex justify-center">
-        <img class="w-40" src="assets/img/logo-large.png">
+      <ion-col size="12" class="flex justify-center mb-5">
+        <div class="w-32 h-32 bg-white shadow-sm rounded-full border border-palette-primary flex justify-center items-center">
+          <ion-text class="text-5xl font-bold text-palette-primary">GL</ion-text>
+        </div>
       </ion-col>
       <ion-col>
         <ion-segment [value]="currentSegmentValue()" (ionChange)="onSegmentValueChange($event)">

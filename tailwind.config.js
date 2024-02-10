@@ -9,6 +9,9 @@ module.exports = {
         palette: {
           primary: '#FA4A0C',
         }
+      },
+      fontFamily: {
+        'sans-protest-strike': ['Protest Strike', 'sans-serif'],
       }
     },
   },

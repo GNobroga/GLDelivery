@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild, inject, signal } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NavController, SegmentCustomEvent } from '@ionic/angular';
+import { NavController, Platform, SegmentCustomEvent } from '@ionic/angular';
 
 type SegmentValueType = 'login' | 'signup';
 
@@ -14,6 +14,8 @@ export class AccountPage implements OnInit {
   #route = inject(ActivatedRoute);
 
   #navController = inject(NavController);
+
+  #platform = inject(Platform);
 
   currentSegmentValue = signal<SegmentValueType>('login');
 
