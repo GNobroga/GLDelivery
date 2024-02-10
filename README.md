@@ -1,16 +1,16 @@
 # GLFood
 
-Um aplicativo feito com o framework Ionic
+This is an application created using ionic framework and angular. (Building)
 
 
-## Fotos
+## Some photos
 
 ![alt text](image.png)
 
 
 ![alt text](image-1.png)
 
-## Tecnologias
+## Technologies
 
 - Ionic framework
 
