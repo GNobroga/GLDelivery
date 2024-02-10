@@ -9,3 +9,11 @@ Um aplicativo feito com o framework Ionic
 
 
 ![alt text](image-1.png)
+
+## Tecnologias
+
+- Ionic framework
+
+- Tailwind CSS
+
+- Angular framework
