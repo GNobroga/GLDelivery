@@ -1,18 +1,22 @@
 # GLFood
 
-This is an application created using ionic framework and angular. (Building)
+A sigla **GL** vem de Gabriel e Lívia, será um aplicativo para delivery de comida.
 
+## Algumas fotos
 
-## Some photos
+![alt text](src/assets/img/image.png)
 
-![alt text](image.png)
+![alt text](src/assets/img/image-1.png)
 
+![alt text](src/assets/img/image-2.png)
 
-![alt text](image-1.png)
+![alt text](src/assets/img/image-3.png)
 
 ## Technologies
 
 - Ionic framework
+
+- Swiper 
 
 - Tailwind CSS
 
