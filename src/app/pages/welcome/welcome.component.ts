@@ -6,7 +6,7 @@ import { Gesture, GestureController, GestureDetail, IonContent, NavController, V
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss',
 })
-export default class WelcomeComponent implements ViewDidEnter, OnDestroy {
+export class WelcomeComponent implements ViewDidEnter, OnDestroy {
 
   @ViewChild('content', { read: ElementRef }) content!: ElementRef<HTMLIonContentElement>;
 

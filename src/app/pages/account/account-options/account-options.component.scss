@@ -1,0 +1,14 @@
+:host {
+  @apply w-full;
+
+  .line {
+    height: 0.1rem;
+  }
+
+ ion-button {
+  --border-style: solid;
+  --border-width: 1px;
+  --border-color: #000;
+  --border-radius: 1rem;
+ }
+}

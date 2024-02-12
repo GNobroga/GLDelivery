@@ -1,0 +1,17 @@
+.welcome {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+
+  ion-button {
+    --border-radius: 1rem;
+    height: 45px;
+
+    &:nth-child(2) {
+      --background: #fff;
+      --border-color: #333;
+      --border-style: solid;
+      --border-width: 0.2px;
+    }
+  }
+}
+
