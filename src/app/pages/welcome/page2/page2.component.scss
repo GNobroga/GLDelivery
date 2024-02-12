@@ -1,0 +1,11 @@
+.page2 {
+  height: 100%;
+  ul {
+    li {
+      background-color: #FFE9B2;
+        &.active {
+          background-color: #FBDE3F;
+      }
+    }
+  }
+}
