@@ -5,6 +5,10 @@ import { AccountPage } from './account.page';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SendEmailComponent } from './send-email/send-email.component';
+import { CheckEmailComponent } from './check-email/check-email.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { PasswordUpdatedComponent } from './password-updated/password-updated.component';
 
 const routes: Routes = [
   {
@@ -29,6 +33,22 @@ const routes: Routes = [
         component: RegisterComponent,
       },
     ],
+  },
+  {
+    path: 'send-email',
+    component: SendEmailComponent,
+  },
+  {
+    path: 'check-email',
+    component: CheckEmailComponent,
+  },
+  {
+    path: 'reset-password',
+    component: ResetPasswordComponent,
+  },
+  {
+    path: 'password-updated',
+    component: PasswordUpdatedComponent,
   }
 ];
 
