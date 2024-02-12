@@ -1,13 +1,19 @@
 <ion-header class="ion-no-border" mode="md">
   <ion-toolbar>
    <ion-buttons slot="end">
-    <ion-button fill="clear" color="primary" (click)="next()">
-      Próximo
-    </ion-button>
+    @if (!isLastPage()) {
+      <ion-button fill="clear" color="primary" (click)="next()">
+        Próximo
+      </ion-button>
+    } @else {
+      <ion-button fill="clear" color="primary" (click)="next()">
+        Ok
+      </ion-button>
+    }
    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content #content>
   <router-outlet></router-outlet>
 </ion-content>
