@@ -1,3 +1,13 @@
-<p>
-  send-email works!
-</p>
+<div class="send-email flex flex-col gap-3 h-full">
+ <div class="flex flex-col gap-3 flex-1">
+    <h1 class="text-2xl font-semibold">Resetar usa senha</h1>
+    <p class="text-sm">Entre com seu email registrado abaixo</p>
+    <ion-input class="mt-5" type="email" placeholder="E-mail" fill="outline"></ion-input>
+    <p class="text-sm relative left-3 mt-5">Lembrou sua senha? <a class="font-bold hover:underline" routerLink="/account/sign-in">Entrar</a></p>
+ </div>
+ <div class="mb-20">
+    <ion-button class="w-full h-12 font-bold normal-case text-base">
+      Enviar
+  </ion-button>
+ </div>
+</div>

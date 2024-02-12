@@ -1,0 +1,12 @@
+.check-email {
+
+  .email-icon {
+    background-color: var(--ion-color-primary);
+    width: 60px;
+    height: 60px;
+  }
+
+  ion-button {
+    --border-radius: 1rem;
+  }
+}

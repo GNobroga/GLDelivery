@@ -12,6 +12,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { CheckEmailComponent } from './check-email/check-email.component';
 import { SendEmailComponent } from './send-email/send-email.component';
 import { PasswordUpdatedComponent } from './password-updated/password-updated.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { PasswordUpdatedComponent } from './password-updated/password-updated.co
     ResetPasswordComponent,
     CheckEmailComponent,
     SendEmailComponent,
-    PasswordUpdatedComponent
+    PasswordUpdatedComponent,
+    ForgotPasswordComponent
   ]
 })
 export default class AccountPageModule {}

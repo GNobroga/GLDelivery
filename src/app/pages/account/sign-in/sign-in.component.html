@@ -6,9 +6,9 @@
   <div class="w-full flex flex-col gap-4 mt-3">
    <ion-input type="email" placeholder="E-mail" fill="outline"></ion-input>
    <ion-input type="password" placeholder="Senha" fill="outline"></ion-input>
-    <a class="ms-auto hover:underline cursor-pointer">Esqueceu a senha?</a>
+    <a class="ms-auto hover:underline cursor-pointer" routerLink="/account/forgot-password/send-email">Esqueceu a senha?</a>
   </div>
-  <ion-button class="w-full h-12 font-bold text-base normal-case">
+  <ion-button class="w-full h-12 font-bold text-base normal-case" routerLink="/tabs/home">
     Login
   </ion-button>
   <app-account-options class="mt-2"></app-account-options>

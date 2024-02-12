@@ -9,6 +9,7 @@ import { SendEmailComponent } from './send-email/send-email.component';
 import { CheckEmailComponent } from './check-email/check-email.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { PasswordUpdatedComponent } from './password-updated/password-updated.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const routes: Routes = [
   {
@@ -35,21 +36,27 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'send-email',
-    component: SendEmailComponent,
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
+    children: [
+      {
+        path: 'send-email',
+        component: SendEmailComponent,
+      },
+      {
+        path: 'check-email',
+        component: CheckEmailComponent,
+      },
+      {
+        path: 'reset-password',
+        component: ResetPasswordComponent,
+      },
+      {
+        path: 'password-updated',
+        component: PasswordUpdatedComponent,
+      },
+    ]
   },
-  {
-    path: 'check-email',
-    component: CheckEmailComponent,
-  },
-  {
-    path: 'reset-password',
-    component: ResetPasswordComponent,
-  },
-  {
-    path: 'password-updated',
-    component: PasswordUpdatedComponent,
-  }
 ];
 
 @NgModule({

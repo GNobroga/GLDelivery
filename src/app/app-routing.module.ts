@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'account',
     loadChildren: () => import('./pages/account/account.module'),
   },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module'),
+  },
 ];
 
 @NgModule({

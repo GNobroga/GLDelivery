@@ -1,3 +1,15 @@
-<p>
-  check-email works!
-</p>
+<div class="check-email flex flex-col h-full">
+ <div class="w-full flex flex-col items-center gap-3 flex-1">
+    <div class="email-icon flex items-center justify-center rounded-full">
+      <img src="assets/icons/email.svg" class="w-7">
+    </div>
+    <h1 class="text-2xl font-bold mt-3">Verificar email</h1>
+    <p class="text-center text-sm">Por favor, cheque seu email para criar uma nova senha</p>
+    <p class="text-sm mt-3">Email não recebido? <a class="font-bold hover:underline">Reenvie</a></p>
+ </div>
+  <div class="mb-20">
+    <ion-button class="w-full h-12 font-bold normal-case text-base" routerLink="/account/sign-in">
+      Continuar
+    </ion-button>
+ </div>
+</div>

@@ -1,0 +1,27 @@
+ion-tabs {
+  ion-tab-bar {
+    height: 80px;
+    --border: none;
+    padding-top: 1rem;
+
+    ion-tab-button[tab=search] {
+      padding-right: 2.5rem;
+    }
+
+    ion-tab-button[tab=favorite] {
+      padding-left: 2.5rem;
+    }
+  }
+
+ ion-fab {
+  ion-fab-button {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    bottom: 1.5rem;
+  }
+
+
+ }
+
+}

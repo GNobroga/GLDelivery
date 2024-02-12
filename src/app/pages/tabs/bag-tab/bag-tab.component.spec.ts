@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CheckEmailComponent } from './check-email.component';
+import { BagTabComponent } from './bag-tab.component';
 
-describe('CheckEmailComponent', () => {
-  let component: CheckEmailComponent;
-  let fixture: ComponentFixture<CheckEmailComponent>;
+describe('BagTabComponent', () => {
+  let component: BagTabComponent;
+  let fixture: ComponentFixture<BagTabComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CheckEmailComponent ],
+      declarations: [ BagTabComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CheckEmailComponent);
+    fixture = TestBed.createComponent(BagTabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
