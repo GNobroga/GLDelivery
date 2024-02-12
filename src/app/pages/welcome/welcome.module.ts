@@ -8,9 +8,11 @@ import { Page4Component } from './page4/page4.component';
 import { IonicModule } from '@ionic/angular';
 import WelcomeComponent from './welcome.component';
 import { RouterModule } from '@angular/router';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
+    StartComponent,
     Page1Component,
     Page2Component,
     Page3Component,

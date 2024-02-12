@@ -5,12 +5,17 @@ import { Page2Component } from './page2/page2.component';
 import WelcomeComponent from './welcome.component';
 import { Page3Component } from './page3/page3.component';
 import { Page4Component } from './page4/page4.component';
+import { StartComponent } from './start/start.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'page1',
+    redirectTo: 'start',
     pathMatch: 'full',
+  },
+  {
+    path: 'start',
+    component: StartComponent,
   },
   {
     path: '',
@@ -33,7 +38,7 @@ const routes: Routes = [
         component: Page4Component,
       },
     ],
-  }
+  },
 ];
 
 @NgModule({

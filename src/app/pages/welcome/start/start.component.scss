@@ -1,0 +1,22 @@
+.start {
+  height: 100%;
+  background-image: url(/assets/images/bg_food.png);
+  background-size: cover;
+  background-color: #fff;
+
+  h1 {
+    background: linear-gradient(to right, #ff9900, #FFE033);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #e8cc2d;
+  }
+
+  ion-button {
+   --background: #ff9900;
+   --border-radius: 1rem;
+   --color: #fff;
+  }
+}
