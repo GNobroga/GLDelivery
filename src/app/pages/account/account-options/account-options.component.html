@@ -8,15 +8,30 @@
     <ion-button fill="none" class="h-12">
         <div class="flex justify-evenly items-center gap-3">
           <img slot="start" src="assets/icons/google.svg" alt="Google"/>
-          <span class="normal-case">Logar com Google</span>
+
+          @if (isRegister()) {
+            <span class="normal-case">Cadastrar com o Google</span>
+          } @else {
+            <span class="normal-case">Logar com Google</span>
+          }
+
         </div>
     </ion-button>
     <ion-button fill="none" class="h-12">
       <div class="flex justify-evenly items-center gap-3 ms-4">
         <img src="assets/icons/facebook.svg" alt="Facebook"/>
-        <span class="normal-case">Logar com Facebook</span>
+
+        @if (isRegister()) {
+          <span class="normal-case">Cadastrar com o Facebook</span>
+        } @else {
+          <span class="normal-case">Logar com Facebook</span>
+        }
       </div>
     </ion-button>
   </div>
-  <p class="text-sm text-center mt-3">Não tem uma conta? <a class="font-bold hover:underline cursor-pointer">Registre-se</a></p>
+  @if (isRegister()) {
+    <p class="text-sm text-center mt-3">Já tem uma conta? <a class="font-bold hover:underline cursor-pointer" routerLink="/account/sign-in">Entrar</a></p>
+  } @else {
+    <p class="text-sm text-center mt-3">Não tem uma conta? <a class="font-bold hover:underline cursor-pointer" routerLink="/account/register">Registre-se</a></p>
+  }
 </div>
