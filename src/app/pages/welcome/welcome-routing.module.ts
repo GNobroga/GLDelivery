@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'page1',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     children: [
       {
         path: 'page1',
