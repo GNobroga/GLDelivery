@@ -14,30 +14,30 @@ export class CategoriesComponent {
 
   public categories: ICategory[] = [
     {
-      source: 'assets/icons/humburguer.svgnpm ',
+      source: 'assets/images/burguer.png',
       label: 'Burguer',
     },
     {
-      source: 'assets/icons/pizza.png',
+      source: 'assets/images/pizza.png',
       label: 'Pizza',
     },
     {
-      source: 'assets/icons/meat.png',
+      source: 'assets/images/meat.png',
       label: 'Carne',
     },
     {
-      source: 'assets/icons/ice_cream.png',
+      source: 'assets/images/ice_cream.png',
       label: 'Sorvete'
     },
     {
-      source: 'assets/icons/ice_cream.png',
+      source: 'assets/images/ice_cream.png',
       label: 'Sorvete'
     },
     {
-      source: 'assets/icons/ice_cream.png',
+      source: 'assets/images/ice_cream.png',
       label: 'Sorvete'
     }
-    
+
   ];
 
   constructor() { }

@@ -21,7 +21,7 @@
 
   <ion-toolbar class="ion-no-border" mode="md">
     <div class="px-2 mt-3">
-      <div class="search flex gap-2 px-4 items-center overflow-hidden ">
+      <div class="search flex gap-2 px-4 items-center overflow-hidden">
         <img src="assets/icons/search.svg" class="h-5"/>
         <input type="search" placeholder="Pesquisar" class="placeholder:text-black placeholder:text-opacity-70 border-none bg-transparent outline-none h-11 flex-1 text-sm">
         <div class="h-8 w-1 border-r border-opacity-40 border-black"></div>
@@ -34,4 +34,10 @@
 
 <ion-content>
   <app-categories/>
+  <ion-item lines="none">
+    <ion-text class="font-semibold text-xl">Destaque</ion-text>
+    <ion-button shape="round" color="light" slot="end">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
 </ion-content>

@@ -2,6 +2,12 @@
   flex: 1;
 
   li {
-    min-width: 120px;
+
+    & > div {
+      width: 80px;
+      height: 65px;
+      // background: linear-gradient(to top, #eeeeee3a, #dddddd51);
+      background: linear-gradient(to top, #FBDE3F, #fbdf3f51);
+    }
   }
 }
