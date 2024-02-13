@@ -5,6 +5,7 @@ import { HomeTabComponent } from './home-tab/home-tab.component';
 import { SearchTabComponent } from './search-tab/search-tab.component';
 import { BagTabComponent } from './bag-tab/bag-tab.component';
 import { FavoriteTabComponent } from './favorite-tab/favorite-tab.component';
+import { AccountTabComponent } from './account-tab/account-tab.component';
 
 const routes: Routes = [
   {
@@ -21,15 +22,15 @@ const routes: Routes = [
       },
       {
         path: 'favorite',
-        component: SearchTabComponent,
+        component: FavoriteTabComponent,
       },
       {
         path: 'bag',
         component: BagTabComponent,
       },
       {
-        path: 'favorite',
-        component: FavoriteTabComponent,
+        path: 'account',
+        component: AccountTabComponent,
       },
     ],
   }

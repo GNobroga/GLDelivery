@@ -1,13 +1,15 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <div>
+      <ion-tab-button tab="home" #home>
+        <div class="flex flex-col items-center gap-2">
           <img src="assets/icons/home.svg" class="w-7">
+          <span class="h-2 w-2 rounded-full {{ home.selected ? 'active' : ''}}"></span>
         </div>
       </ion-tab-button>
-      <ion-tab-button tab="search">
-        <div>
+      <ion-tab-button tab="search" #search>
+        <div class="flex flex-col items-center gap-2">
           <img src="assets/icons/search.svg" class="w-7">
+          <span class="h-2 w-2 rounded-full {{ search.selected ? 'active' : ''}}"></span>
         </div>
       </ion-tab-button>
 
@@ -19,14 +21,16 @@
         </ion-fab-button>
       </ion-fab>
 
-      <ion-tab-button tab="favorite">
-        <div>
+      <ion-tab-button tab="favorite" #favorite>
+        <div class="flex flex-col items-center gap-2">
           <img src="assets/icons/favorite.svg" class="w-7">
+          <span class="h-2 w-2 rounded-full {{ favorite.selected ? 'active' : ''}}"></span>
         </div>
       </ion-tab-button>
-      <ion-tab-button tab="account">
-        <div>
+      <ion-tab-button tab="account" #account>
+        <div class="flex flex-col items-center gap-2">
           <img src="assets/icons/account.svg" class="w-7">
+          <span class="h-2 w-2 rounded-full {{ account.selected ? 'active' : ''}}"></span>
         </div>
       </ion-tab-button>
   </ion-tab-bar>

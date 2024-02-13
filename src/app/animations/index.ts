@@ -3,7 +3,7 @@ import { animate, keyframes, style, transition, trigger } from "@angular/animati
 export default {
   fadeIn: trigger('fadeIn', [
     transition(':enter',
-      animate('1s ease-in', keyframes([
+      animate('0.5s ease-in', keyframes([
         style({
           opacity: 0,
         }),

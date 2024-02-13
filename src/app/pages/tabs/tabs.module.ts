@@ -9,6 +9,8 @@ import { BagTabComponent } from './bag-tab/bag-tab.component';
 import { FavoriteTabComponent } from './favorite-tab/favorite-tab.component';
 import { SearchTabComponent } from './search-tab/search-tab.component';
 import { HomeTabComponent } from './home-tab/home-tab.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoriaItemComponent } from './components/category-item/category-itemcomponent';
 
 @NgModule({
   imports: [
@@ -23,7 +25,9 @@ import { HomeTabComponent } from './home-tab/home-tab.component';
     BagTabComponent,
     FavoriteTabComponent,
     HomeTabComponent,
-    SearchTabComponent
+    SearchTabComponent,
+    CategoriesComponent,
+    CategoriaItemComponent
   ]
 })
 export default class TabsPageModule {}

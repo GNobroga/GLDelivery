@@ -1,3 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-no-border" mode="md" class="first-toolbar">
+   <ion-item lines="none">
+      <div class="flex flex-col" id="address">
+        <span class="text-sm">Entregue agora</span>
+        <span class="text-sm font-bold flex items-center gap-1">Castelo - ES <ion-icon name="chevron-down-outline"></ion-icon></span>
+      </div>
+      <ion-popover trigger="address" triggerAction="click">
+        <ng-template>
+          <ion-content >
+            <ion-list>
+              <ion-item button>Rod. Família Requieri, 95</ion-item>
+              <ion-item button>Rod. Família Requieri, 96</ion-item>
+              <ion-item button>Rod. Família Requieri, 97</ion-item>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+   </ion-item>
+  </ion-toolbar>
+
+  <ion-toolbar class="ion-no-border" mode="md">
+    <div class="px-2">
+      <div class="search flex gap-2 px-4 items-center overflow-hidden ">
+        <img src="assets/icons/search.svg" class="h-5"/>
+        <input type="search" placeholder="Pesquisar" class="placeholder:text-black placeholder:text-opacity-70 border-none bg-transparent outline-none h-11 flex-1 text-sm">
+        <div class="h-8 w-1 border-r border-opacity-40 border-black"></div>
+        <img src="assets/icons/line.svg" class="h-5"/>
+      </div>
+    </div>
+  </ion-toolbar>
+
+</ion-header>
+
 <ion-content>
-  
+  <app-categories/>
 </ion-content>

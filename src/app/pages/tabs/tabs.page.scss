@@ -1,6 +1,6 @@
 ion-tabs {
   ion-tab-bar {
-    height: 80px;
+    height: 95px;
     --border: none;
     padding-top: 1rem;
 
@@ -18,10 +18,14 @@ ion-tabs {
     height: 60px;
     width: 60px;
     position: relative;
-    bottom: 1.5rem;
+    bottom: 2rem;
   }
 
 
+ }
+
+ span.active {
+  background-color: var(--ion-color-primary);
  }
 
 }
