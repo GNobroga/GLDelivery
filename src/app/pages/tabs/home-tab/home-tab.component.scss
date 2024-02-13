@@ -4,7 +4,23 @@
 
 ion-toolbar {
   .search {
-    background-color: rgba(229, 229, 229, 0.45);
+    background-color: #fff;
     border-radius: 1.5rem;
+    @apply border border-black border-opacity-60;
   }
+}
+
+
+.highlight-button {
+  --background: linear-gradient(to top, #FBDE3F, #fbdf3f85);
+}
+
+ion-segment {
+  width: 50px;
+  border-radius: 1rem;
+  @apply px-3;
+}
+
+ion-segment-button:first-of-type {
+  --border-radius: 2rem;
 }

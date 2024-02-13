@@ -1,0 +1,24 @@
+.custom-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: #fbdf3f49;
+  position: relative;
+  @apply rounded-full;
+  background-image: url(/assets/icons/person_walking.svg);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    @apply flex items-center justify-center;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #f5d104;
+    left: 0;
+  }
+
+}

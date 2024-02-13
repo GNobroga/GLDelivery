@@ -3,11 +3,11 @@
 
   li {
 
-    & > div {
+    & > ion-item {
       width: 80px;
       height: 65px;
-      // background: linear-gradient(to top, #eeeeee3a, #dddddd51);
-      background: linear-gradient(to top, #FBDE3F, #fbdf3f51);
+      --background: linear-gradient(to bottom, #FBDE3F, #fbdf3f85);
+      --border-radius: 0.3rem;
     }
   }
 }
