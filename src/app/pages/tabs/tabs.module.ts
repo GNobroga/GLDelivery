@@ -12,6 +12,8 @@ import { HomeTabComponent } from './home-tab/home-tab.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoriaItemComponent } from './components/category-item/category-itemcomponent';
 import { CustomToggleComponent } from './components/custom-toggle/custom-toggle.component';
+import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
+import { HighlightsComponent } from './components/highlights/highlights.component';
 
 @NgModule({
   imports: [
@@ -29,7 +31,9 @@ import { CustomToggleComponent } from './components/custom-toggle/custom-toggle.
     SearchTabComponent,
     CategoriesComponent,
     CategoriaItemComponent,
-    CustomToggleComponent
+    CustomToggleComponent,
+    HighlightItemComponent,
+    HighlightsComponent
   ]
 })
 export default class TabsPageModule {}
