@@ -4,3 +4,11 @@ Estou desenvolvendo um aplicativo multiplataforma utilizando o framework Ionic/A
 
 https://github.com/GNobroga/GLDelivery/assets/88632109/fa45b42e-68b8-47f5-984f-1581ace681f3
 
+
+## Tecnologias
+
+- Angular
+
+- Ionic
+
+- TailwindCSS
