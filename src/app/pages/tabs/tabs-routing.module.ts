@@ -6,6 +6,8 @@ import { SearchTabComponent } from './search-tab/search-tab.component';
 import { BagTabComponent } from './bag-tab/bag-tab.component';
 import { FavoriteTabComponent } from './favorite-tab/favorite-tab.component';
 import { AccountTabComponent } from './account-tab/account-tab.component';
+import { FeaturedPageComponent } from './featured-page/featured-page.component';
+import { OffersPageComponent } from './offers-page/offers-page.component';
 
 const routes: Routes = [
   {
@@ -33,7 +35,15 @@ const routes: Routes = [
         component: AccountTabComponent,
       },
     ],
-  }
+  },
+  {
+    path: 'featured',
+    component: FeaturedPageComponent,
+  },
+  {
+    path: 'offers',
+    component: OffersPageComponent,
+  },
 ];
 
 @NgModule({

@@ -14,6 +14,9 @@ import { CategoriaItemComponent } from './components/category-item/category-item
 import { CustomToggleComponent } from './components/custom-toggle/custom-toggle.component';
 import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
 import { HighlightsComponent } from './components/highlights/highlights.component';
+import { OffersComponent } from './components/offers/offers.component';
+import { FeaturedPageComponent } from './featured-page/featured-page.component';
+import { OffersPageComponent } from './offers-page/offers-page.component';
 
 @NgModule({
   imports: [
@@ -33,7 +36,11 @@ import { HighlightsComponent } from './components/highlights/highlights.componen
     CategoriaItemComponent,
     CustomToggleComponent,
     HighlightItemComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    OffersComponent,
+    FeaturedPageComponent,
+    OffersComponent,
+    OffersPageComponent
   ]
 })
 export default class TabsPageModule {}

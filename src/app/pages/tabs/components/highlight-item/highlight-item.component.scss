@@ -1,7 +1,11 @@
 li {
-  min-width: 280px;
+  min-width: 260px;
   .average {
     background-color: var(--ion-color-primary);
+  }
+
+  ion-button {
+    --ripple-color: transparent;
   }
 
 }

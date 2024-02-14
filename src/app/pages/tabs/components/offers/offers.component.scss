@@ -1,0 +1,9 @@
+.offers::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  li > div {
+    background: linear-gradient(to top, #ffd900c3, #ffd9005c);
+  }
+}

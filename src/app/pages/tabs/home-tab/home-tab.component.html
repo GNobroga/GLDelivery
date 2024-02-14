@@ -2,8 +2,8 @@
   <ion-toolbar class="ion-no-border" mode="md" class="first-toolbar">
    <ion-item lines="none">
       <div class="flex flex-col" id="address" slot="start">
-        <span class="text-sm">Entregue agora</span>
-        <span class="text-sm font-bold flex items-center gap-1">Castelo - ES <ion-icon name="chevron-down-outline"></ion-icon></span>
+        <span class="text-xs">Entregue agora</span>
+        <span class="text-xs font-bold flex items-center gap-1">Castelo - ES <ion-icon name="chevron-down-outline"></ion-icon></span>
       </div>
 
       <app-custom-toggle slot="end"/>
@@ -29,17 +29,24 @@
         <input type="search" placeholder="Pesquisar" class="placeholder:text-black placeholder:text-opacity-70 border-none bg-transparent outline-none h-11 flex-1 text-sm">
       </div>
     </div>
+    <app-categories/>
   </ion-toolbar>
 
 </ion-header>
 
 <ion-content>
-  <app-categories/>
   <ion-item lines="none">
     <ion-text class="font-semibold text-xl">Destaque</ion-text>
-    <ion-button shape="round" slot="end" class="highlight-button">
+    <ion-button shape="round" slot="end" class="highlight-button" routerLink="/tabs/featured">
       <ion-icon name="arrow-forward-outline"></ion-icon>
     </ion-button>
   </ion-item>
   <app-highlights/>
+  <ion-item lines="none">
+    <ion-text class="font-semibold text-xl">Ofertas</ion-text>
+    <ion-button shape="round" slot="end" class="highlight-button" routerLink="/tabs/offers">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <app-offers/>
 </ion-content>

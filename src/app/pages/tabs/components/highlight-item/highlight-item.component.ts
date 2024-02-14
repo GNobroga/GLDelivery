@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-highlight-item',
   templateUrl: './highlight-item.component.html',
   styleUrls: ['./highlight-item.component.scss'],
 })
-export class HighlightItemComponent  implements OnInit {
+export class HighlightItemComponent {
 
   constructor() { }
-
-  ngOnInit() {}
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-highlights',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./highlights.component.scss'],
 })
 export class HighlightsComponent {
+
+  @Input()
+  public direction: 'row' | 'column' = 'row';
 
   constructor() { }
 
