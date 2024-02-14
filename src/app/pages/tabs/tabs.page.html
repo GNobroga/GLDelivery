@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs id="main-content">
   <ion-tab-bar slot="bottom">
       <ion-tab-button tab="home" #home>
         <div class="flex flex-col items-center gap-2">
@@ -27,7 +27,7 @@
           <span class="h-2 w-2 rounded-full {{ favorite.selected ? 'active' : ''}}"></span>
         </div>
       </ion-tab-button>
-      <ion-tab-button tab="account" #account>
+      <ion-tab-button #account (click)="openMenu(menu)">
         <div class="flex flex-col items-center gap-2">
           <img src="assets/icons/account.svg" class="w-7">
           <span class="h-2 w-2 rounded-full {{ account.selected ? 'active' : ''}}"></span>
@@ -35,3 +35,78 @@
       </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
+
+
+<ion-menu contentId="main-content" #menu>
+  <ion-header class="ion-no-border">
+    <ion-toolbar color="primary">
+     <div class="py-4 flex flex-col items-center gap-3">
+        <div class="img w-[100px] h-[100px] rounded-full bg-white"></div>
+        <ion-text class="text-sm font-normal">Gabriel Cardoso</ion-text>
+     </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+    <ion-list lines="none" class="px-3">
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/person.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Visualizar perfil</span>
+        </div>
+      </ion-item>
+
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/voucher.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Cupons/Ofertas</span>
+        </div>
+      </ion-item>
+
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/address.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Endereços</span>
+        </div>
+      </ion-item>
+
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/order.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Pedidos</span>
+        </div>
+      </ion-item>
+
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/helper.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Ajuda</span>
+        </div>
+      </ion-item>
+
+      <ion-item button>
+        <div class="flex items-center w-full">
+          <img slot="start" src="assets/icons/gift.svg" class="absolute left-0">
+          <span class="font-medium text-sm ms-10">Convidar</span>
+        </div>
+      </ion-item>
+    </ion-list>
+
+    <div class="h-1 w-full border-t border-gray-300 border-opacity-60"></div>
+
+    <ion-list lines="none" class="px-3">
+      <ion-item button>
+        <ion-label class="text-sm">Configurações</ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-label class="text-sm">Termos e Condições</ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-label class="text-sm">Sair</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+
+
