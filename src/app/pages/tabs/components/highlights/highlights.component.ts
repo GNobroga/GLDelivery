@@ -10,6 +10,9 @@ export class HighlightsComponent {
   @Input()
   public direction: 'row' | 'column' = 'row';
 
+  @Input()
+  public favoriteMode = false;
+
   constructor() { }
 
 

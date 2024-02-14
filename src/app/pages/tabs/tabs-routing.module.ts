@@ -23,10 +23,6 @@ const routes: Routes = [
         component: SearchTabComponent,
       },
       {
-        path: 'favorite',
-        component: FavoriteTabComponent,
-      },
-      {
         path: 'bag',
         component: BagTabComponent,
       },
@@ -43,6 +39,10 @@ const routes: Routes = [
   {
     path: 'offers',
     component: OffersPageComponent,
+  },
+  {
+    path: 'favorites',
+    component: FavoriteTabComponent,
   },
 ];
 

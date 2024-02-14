@@ -1,3 +1,15 @@
-<p>
-  favorite-tab works!
-</p>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+   <div class="flex items-center justify-center relative pb-5 pt-8">
+      <ion-buttons class="absolute left-0">
+        <ion-back-button defaultHref="/tabs/home"></ion-back-button>
+      </ion-buttons>
+      <ion-text class="font-semibold text-xl">
+        Favoritos
+      </ion-text>
+   </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <app-highlights direction="column" [favoriteMode]="true"/>
+</ion-content>
