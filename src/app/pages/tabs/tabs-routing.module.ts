@@ -8,6 +8,7 @@ import { FavoriteTabComponent } from './favorite-tab/favorite-tab.component';
 import { AccountTabComponent } from './account-tab/account-tab.component';
 import { FeaturedPageComponent } from './featured-page/featured-page.component';
 import { OffersPageComponent } from './offers-page/offers-page.component';
+import { AddCartComponent } from './add-cart/add-cart.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
     path: 'favorites',
     component: FavoriteTabComponent,
   },
+  {
+    path: 'add-cart',
+    component: AddCartComponent,
+  }
 ];
 
 @NgModule({

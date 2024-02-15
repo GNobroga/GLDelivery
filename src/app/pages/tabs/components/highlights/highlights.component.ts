@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild, inject } from '@angular/core';
-import { AnimationController } from '@ionic/angular';
+import { AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild } from '@angular/core';
 import { Subscription, interval, of,  switchMap, throttleTime } from 'rxjs';
 
 @Component({
@@ -20,11 +19,6 @@ export class HighlightsComponent implements AfterViewInit, OnDestroy {
 
   public subscriptions: Subscription[] = [];
 
-  #animationController = inject(AnimationController);
-
-  constructor() {
-
-   }
 
   public ngAfterViewInit(): void {
     if (!this.highlights.nativeElement.hasChildNodes() || this.favoriteMode) {
@@ -36,7 +30,7 @@ export class HighlightsComponent implements AfterViewInit, OnDestroy {
 
     let backSlide = false;
 
-    const subscription = interval(1000)
+    const subscription = interval(1500)
       .pipe(
         throttleTime(500),
         switchMap(() => of(this.highlights.nativeElement)))

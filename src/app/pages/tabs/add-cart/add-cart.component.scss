@@ -1,0 +1,25 @@
+ion-toolbar {
+  ion-back-button {
+    --background: white;
+  }
+
+  ion-fab {
+    ion-fab-button {
+      --background: white;
+      --box-shadow: none;
+    }
+  }
+}
+
+.plus {
+  li {
+    &::after {
+      content: "";
+      @apply h-1 w-full absolute left-0 border-t border-black -bottom-4 py-1 border-opacity-15;
+    }
+  }
+}
+
+.add {
+  --border-radius: 1rem;
+}

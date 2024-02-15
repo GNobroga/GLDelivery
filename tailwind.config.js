@@ -9,7 +9,10 @@ module.exports = {
         brand: {
           primary: '#FFDD22',
         }
-      }
+      },
+      backgroundImage: {
+        'background': 'url(/assets/images/bg_food.png)',
+      },
     },
   },
   plugins: [],

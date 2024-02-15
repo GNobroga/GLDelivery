@@ -17,6 +17,7 @@ import { HighlightsComponent } from './components/highlights/highlights.componen
 import { OffersComponent } from './components/offers/offers.component';
 import { FeaturedPageComponent } from './featured-page/featured-page.component';
 import { OffersPageComponent } from './offers-page/offers-page.component';
+import { AddCartComponent } from './add-cart/add-cart.component';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { OffersPageComponent } from './offers-page/offers-page.component';
     OffersComponent,
     FeaturedPageComponent,
     OffersComponent,
-    OffersPageComponent
+    OffersPageComponent,
+    AddCartComponent
   ]
 })
 export default class TabsPageModule {}
