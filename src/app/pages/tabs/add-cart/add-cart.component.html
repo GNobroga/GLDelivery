@@ -1,20 +1,17 @@
-
-<ion-content fullscreen="true">
-  <section class="relative">
-    <ion-toolbar>
-      <div class="h-[14vh] bg-background bg-cover bg-brand-primary bg-opacity-50 px-3 pt-5">
-        <div class="flex justify-between items-center">
-          <span>
-            <ion-back-button defaultHref="/tabs/home"></ion-back-button>
-          </span>
-          <ion-fab horizontal="end">
-            <ion-fab-button class="w-[48px] h-[48px]">
-              <img src="assets/icons/heart-black.svg"/>
-            </ion-fab-button>
-          </ion-fab>
-        </div>
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <div class="h-[14vh] bg-background bg-cover bg-brand-primary bg-opacity-50 px-3 pt-5">
+      <div class="flex justify-between items-center">
+        <span>
+          <ion-back-button defaultHref="/tabs/home"></ion-back-button>
+        </span>
+        <ion-fab horizontal="end">
+          <ion-fab-button class="w-[48px] h-[48px]">
+            <img src="assets/icons/heart-black.svg"/>
+          </ion-fab-button>
+        </ion-fab>
       </div>
-    </ion-toolbar>
+    </div>
     <div class="outer pt-20 relative bg-background bg-brand-primary bg-opacity-50 bg-cover">
       <div class="inner flex flex-col gap-2 items-center bg-white pb-6">
         <img src="assets/images/burguer-cart.png" class="w-[200px] absolute z-10 top-0">
@@ -36,11 +33,19 @@
           </ul>
         </div>
         <h2 class="mt-5 font-bold text-xl">R$ 0,50</h2>
+      </div>
+      <div class="bg-white ps-3">
+        <h3 class="text-[17px] font-semibold">Adicionais</h3>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content>
+  <section class="relative">
+      <div class="inner flex flex-col gap-2 items-center bg-white pb-6">
         <!-- Adicionais -->
         <div class="w-full px-3 mt-5 flex flex-col gap-3">
-          <h3 class="text-[17px] font-semibold">Adicionais</h3>
-
           <ul class="plus flex flex-col gap-5">
             <li class="flex justify-between items-center relative">
               <span class="text-base">Ketchup</span>
@@ -100,7 +105,6 @@
             <span class="normal-case text-base font-semibold">Adicionar 1 no carrinho</span>
           </ion-button>
        </div>
-        </div>
     </div>
   </section>
 </ion-content>
