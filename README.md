@@ -15,3 +15,5 @@ https://github.com/GNobroga/GLDelivery/assets/88632109/1a0f5d56-5383-419f-86ea-3
 - Ionic
 
 - TailwindCSS
+
+### Feito por amor, por mim <3
