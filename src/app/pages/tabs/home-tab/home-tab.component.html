@@ -12,7 +12,7 @@
 
   <ion-toolbar class="ion-no-border" mode="md">
     <div class="px-2 mt-3">
-      <div class="search flex gap-2 px-4 items-center overflow-hidden">
+      <div class="search flex gap-2 px-4 items-center overflow-hidden" routerLink="/tabs/offers">
         <img src="assets/icons/search.svg" class="h-5"/>
         <input type="search" placeholder="Pesquisar" class="placeholder:text-black placeholder:text-opacity-70 border-none bg-transparent outline-none h-11 flex-1 text-sm">
       </div>
@@ -29,7 +29,9 @@
       <ion-icon name="arrow-forward-outline"></ion-icon>
     </ion-button>
   </ion-item>
+
   <app-highlights/>
+  
   <ion-item lines="none">
     <ion-text class="font-semibold text-xl">Ofertas</ion-text>
     <ion-button shape="round" slot="end" class="highlight-button" routerLink="/tabs/offers">
@@ -42,14 +44,47 @@
     <ng-template>
       <ion-header class="ion-no-border">
         <ion-toolbar>
-          <ion-title>Endereços</ion-title>
+          <ion-title class="text-base">Seus endereços</ion-title>
           <ion-buttons slot="end">
-            <ion-button (click)="modal.dismiss()">Close</ion-button>
+            <ion-button (click)="modal.dismiss()">
+              <img src="assets/images/close.png">
+            </ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
       <ion-content>
-
+        <ion-list lines="none">
+          <ion-item button>
+           <div class="flex flex-col">
+              <span class="text-base">Rod. Familia Requieri, 95</span>
+              <span class="text-xs opacity-80 normal-case">Castelo - ES, 29360-000</span>
+           </div>
+          </ion-item>
+          <ion-item button class="mt-3">
+            <div class="flex flex-col">
+               <span class="text-base">Rod. Familia Requieri, 95</span>
+               <span class="text-xs opacity-80 normal-case">Castelo - ES, 29360-000</span>
+            </div>
+           </ion-item>
+           <ion-item button class="mt-3">
+            <div class="flex flex-col">
+               <span class="text-base">Rod. Familia Requieri, 95</span>
+               <span class="text-xs opacity-80 normal-case">Castelo - ES, 29360-000</span>
+            </div>
+           </ion-item>
+           <ion-item button class="mt-3">
+            <div class="flex flex-col">
+               <span class="text-base">Rod. Familia Requieri, 95</span>
+               <span class="text-xs opacity-80 normal-case">Castelo - ES, 29360-000</span>
+            </div>
+           </ion-item>
+           <ion-item button class="mt-3">
+            <div class="flex flex-col">
+               <span class="text-base">Rod. Familia Requieri, 95</span>
+               <span class="text-xs opacity-80 normal-case">Castelo - ES, 29360-000</span>
+            </div>
+           </ion-item>
+        </ion-list>
       </ion-content>
     </ng-template>
   </ion-modal>
